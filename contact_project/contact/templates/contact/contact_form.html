@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>контакты</title>
+</head>
+<body>
+    <h1>свяжитесь с нами</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">сохранить</button>
+    </form>
+</body>
+</html>
